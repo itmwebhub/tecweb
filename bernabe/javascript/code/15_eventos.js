@@ -16,3 +16,13 @@ function mostrar(){
 
     alert('El nombre es: ' + nombre + ' y la edad es: ' + edad);
 }
+
+function validarPass(){
+    var contrasena = document.form3.contrasena.value;
+
+    if(contrasena.length < 5){
+        alert('La contraseña debe tener minimo 5 caracteres');
+    } else{
+        alert('La contraseña es correcta');
+    }
+}

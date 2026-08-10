@@ -6,3 +6,14 @@ function validar()
         document.form3.text1.value = "";
     }
 }
+function verPassword()
+{
+    if (document.form3.text1.type == "password")
+    {
+        document.form3.text1.type = "text";
+    }
+    else
+    {
+        document.form3.text1.type = "password";
+    }
+}

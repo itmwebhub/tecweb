@@ -26,3 +26,13 @@ function validarPass(){
         alert('La contraseña es correcta');
     }
 }
+
+function datosColores(){
+    var inputnumero = document.getElementById('numero');
+    var inputcolor = document.getElementById('color');
+    var inputvalor = document.getElementById('valor');
+
+    inputnumero.value = document.form4.select1.selectedIndex
+    inputcolor.value = document.form4.select1.options[document.form4.select1.selectedIndex].text;
+    inputvalor.value = document.form4.select1.options[document.form4.select1.selectedIndex].value;
+}

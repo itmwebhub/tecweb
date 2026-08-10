@@ -36,3 +36,25 @@ function datosColores(){
     inputcolor.value = document.form4.select1.options[document.form4.select1.selectedIndex].text;
     inputvalor.value = document.form4.select1.options[document.form4.select1.selectedIndex].value;
 }
+
+function contarLenguajes(){
+    var contador = 0;
+
+    if(document.form5.lenguaje1.checked){
+        contador++;
+    }
+
+    if(document.form5.lenguaje2.checked){
+        contador++;
+    }
+
+    if(document.form5.lenguaje3.checked){
+        contador++;
+    }
+
+    if(document.form5.lenguaje4.checked){
+        contador++;
+    }
+
+    alert('El usuario conoce ' + contador + ' lenguajes de programación.')
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays en Javascript</title>
+</head>
+<body>
+    <div><a href="../index.html">Volver a la página principal</a></div> 
+    <script language="javascript" src="../code/15_eventos.js"></script>
+
+    <form action="#">
+        <input type="button" value="Incrementar" onclick="incrementar()">
+        <input type="button" value="Decrementar" onclick="decrementar()">
+    </form>
+
+    <hr>
+
+    <form name="form2" action="#">
+        <div>
+            <label for="name">Nombre:</label>
+            <input type="text" name="nombre">
+        </div>
+        <div>
+            <label for="edad">Edad:</label>
+            <input type="text" name="edad">
+        </div>
+
+        <input type="button" onclick="mostrar()" value="Enviar">
+        
+    </form>
+
+    <hr>
+
+    <form action="#" name="form3">
+        <div>
+            <label for="password">Contraseña:</label>
+            <input type="password" name="contrasena">
+        </div>
+        <input type="button" value="Validar" onclick="validarPass()">
+    </form>
+
+    <hr>
+
+    <form action="#" name="form4">
+
+    <div>
+        <label for="select1">Seleccione un color:</label>
+        <select name="select1" id="select1" onchange="datosColores()">
+            <option value=""></option>
+            <option value="#FF0000">Rojo</option>
+            <option value="#00FF00">Verde</option>
+            <option value="#0000FF">Azul</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="numero">Opción del select:</label>
+        <input type="text" name="numero" id="numero">
+    </div>
+
+    <div>
+        <label for="color">Color elegido:</label>
+        <input type="text" name="color" id="color">
+    </div>
+
+    <div>
+        <label for="valor">Valor de la opción:</label>
+        <input type="text" name="valor" id="valor">
+    </div>
+
+</form>
+
+    <hr>
+
+    <form action="#" name="form5">
+        <div>
+            <label for="lenguajes">Marque cuantos lenguajes de programación conoce:</label>
+        </div>
+        <div><input type="checkbox" name="lenguaje1">Java</div>
+        <div><input type="checkbox" name="lenguaje2">PHP</div>
+        <div><input type="checkbox" name="lenguaje3">JavaScript</div>
+        <div><input type="checkbox" name="lenguaje4">Python</div>
+        
+        <input type="button" value="Enviar" onclick="contarLenguajes()">
+    </form>
+</body>
+</html>

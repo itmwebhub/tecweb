@@ -1,6 +1,4 @@
-
 function pintar(col)
 {
-    alert(col);
-    document.body.style.backgroundColor = col;
+    document.body.style.setProperty("background-color", col, "important");
 }

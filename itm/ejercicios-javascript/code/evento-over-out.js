@@ -1,4 +1,4 @@
 function pintar(col)
 {
-    document.bgColor=col;
+    document.body.style.backgroundColor = col;
 }

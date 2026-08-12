@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <script type="text/javascript">
+        var contador = 0;
+
+        function incrementar() {
+            contador++;
+            alert('El contador ahora vale: ' + contador);
+        }
+
+        function decrementar() {
+            contador--;
+            alert('El contador ahora vale: ' + contador);
+        }
+
+        function mostrar() {
+            var nom = document.form1.nombre.value;
+            var ed = document.form1.edad.value;
+            alert('Ingreso el nombre: ' + nom);
+            alert('Y la edad: ' + ed);
+        }
+
+        function validar() {
+            if (document.form2.text1.value.length < 5) {
+                alert('Ingrese al menos 5 caracteres');
+                document.form2.text1.value = '';
+            }
+        }
+
+        function cambiarColor() {
+            var select = document.form3.select1;
+            var opcion = select.options[select.selectedIndex];
+            document.form3.text1.value = select.selectedIndex;
+            document.form3.text2.value = opcion.text;
+            document.form3.text3.value = opcion.value;
+        }
+
+        function contarSeleccionados() {
+            var cant = 0;
+            if (document.form4.lenguaje1.checked) cant++;
+            if (document.form4.lenguaje2.checked) cant++;
+            if (document.form4.lenguaje3.checked) cant++;
+            if (document.form4.lenguaje4.checked) cant++;
+            alert('Conoce ' + cant + ' lenguajes');
+        }
+
+        function mostrarSeleccionado() {
+            if (document.form5.estudios[0].checked)
+                alert('No tienes estudios');
+            else if (document.form5.estudios[1].checked)
+                alert('Tienes estudios primarios');
+            else if (document.form5.estudios[2].checked)
+                alert('Tienes estudios secundarios');
+            else if (document.form5.estudios[3].checked)
+                alert('Tienes estudios universitarios');
+        }
+    </script>
+</head>
+<body>
+    <form name="form0">
+        <input type="button" onclick="incrementar()" value="Incrementar">
+        <input type="button" onclick="decrementar()" value="Decrementar">
+    </form>
+
+    <form name="form1">
+        <label>Ingrese su nombre:</label>
+        <input type="text" name="nombre"><br>
+        <label>Ingrese su edad:</label>
+        <input type="text" name="edad"><br>
+        <input type="button" value="Confirmar" onclick="mostrar()">
+    </form>
+
+    <form name="form2">
+        <label>Ingrese clave (al menos 5 caracteres):</label>
+        <input type="password" name="text1">
+        <input type="button" onclick="validar()" value="Enviar">
+    </form>
+
+    <form name="form3">
+        <label>Seleccione un color:</label>
+        <select name="select1" onchange="cambiarColor()">
+            <option value="0xff0000">Rojo</option>
+            <option value="0x00ff00">Verde</option>
+            <option value="0x0000ff">Azul</option>
+        </select><br>
+        Número de índice seleccionado del objeto SELECT: <input type="text" name="text1"><br>
+        Texto seleccionado: <input type="text" name="text2"><br>
+        Valor asociado: <input type="text" name="text3"><br>
+    </form>
+
+    <form name="form4">
+        <input type="checkbox" name="lenguaje1"> JavaScript<br>
+        <input type="checkbox" name="lenguaje2"> PHP<br>
+        <input type="checkbox" name="lenguaje3"> JSP<br>
+        <input type="checkbox" name="lenguaje4"> VB.Net<br>
+        <input type="button" value="Mostrar" onclick="contarSeleccionados()">
+    </form>
+
+    <form name="form5">
+        <input type="radio" name="estudios" value="sin estudios"> Sin estudios<br>
+        <input type="radio" name="estudios" value="primarios"> Primarios<br>
+        <input type="radio" name="estudios" value="secundarios"> Secundarios<br>
+        <input type="radio" name="estudios" value="universitarios"> Universitarios<br>
+        <input type="button" value="Mostrar" onclick="mostrarSeleccionado()">
+    </form>
+</body>
+</html>

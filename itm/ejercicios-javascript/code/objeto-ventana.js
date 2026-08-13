@@ -47,7 +47,7 @@ function cargarCadena()
     alert("Usted ingresó: "+cad);
 }
 
-function plugins() 
+function mostrarPlugins() 
 { 
     document.write("Valores de las propiedades del objeto navigator: <br>"); 
     document.write("appName: " + navigator.appName + "<br>"); 

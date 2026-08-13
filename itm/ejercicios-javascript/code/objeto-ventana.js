@@ -19,7 +19,7 @@ function abrirParametros()
 
 function abrirScreen()
 {
-    document.write("Valores de las propiedades del objeto"+"Screen:"+"/","<br>");
+    document.write('Valores de las propiedades del objeto "Screen:" ',"<br>");
     document.write("AvailHeight: "+ screen.availHeight+ "<br>");
     document.write("AvailWidth: "+ screen.availWidth+ "<br>");
     document.write("height: "+ screen.height+ "<br>");
@@ -36,23 +36,22 @@ function confirmar()
 {
     var respuesta=confirm("Presione alguno de los dos botones");
     if(respuesta ==true)
-        alert("presionó"+"aceptar"+"/");
+        alert('Presionó "Aceptar"');
     else
-        alert("presionó"+"cancelar"+"/");
+        alert('presionó "cancelar"');
 }
 
 function cargarCadena()
 {
     var cad=prompt("Cargue una cadena:","");
-    alert("Usted ingresó"+cad);
+    alert("Usted ingresó: "+cad);
 }
 
-function plugins()
-{
-    document.write("Valores de las propiedades del objeto navigator: <br>");
-    document.write("appName: "+ navigator.appname+ "<br>");
-    document.write("appVersion: "+ navigator.appVersion+ "<br>");
-    document.write("cookieEnabled: "+ navigator.cookieEnabled+ "<br>");
-    document.write("plugins: "+ navigator.plugins.lenght + "<br>");
+function plugins() 
+{ 
+    document.write("Valores de las propiedades del objeto navigator: <br>"); 
+    document.write("appName: " + navigator.appName + "<br>"); 
+    document.write("appVersion: " + navigator.appVersion + "<br>"); 
+    document.write("cookieEnabled: " + navigator.cookieEnabled + "<br>"); 
+    document.write("plugins: " + navigator.plugins.length + "<br>");
 }
-

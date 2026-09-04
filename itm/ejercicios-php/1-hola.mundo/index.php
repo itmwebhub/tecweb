@@ -9,6 +9,7 @@
 <body>
 Este es un ejercicio realizado mediante lenguaje php
 <br>
+<br>
     <?php include "codex.php"; ?>
 
 </body>

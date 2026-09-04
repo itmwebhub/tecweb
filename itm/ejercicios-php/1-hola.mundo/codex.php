@@ -1,3 +1,3 @@
 <?php
-echo "Hola mundo";
+echo "Hola mundo, soy un archivo php apto para servidores.";
 ?>

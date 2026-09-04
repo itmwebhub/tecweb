@@ -7,7 +7,8 @@
     </head>
 
 <body>
-
+Este es un ejercicio realizado mediante lenguaje php
+<br>
     <?php include "codex.php"; ?>
 
 </body>

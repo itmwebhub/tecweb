@@ -1,0 +1,124 @@
+Ejercicios
+Ejercicio 1: Comprensión
+Enunciado
+Responde brevemente:
+1.	¿Qué es un requisito?
+Un requisito es una condición o capacidad que debe ser cumplida o poseída por un sistema o componente de sistema para satisfacer alguna necesidad. Puede entenderse como el conjunto de descripciones acerca de cómo se debe comportar un sistema de cara al usuario. Los requisitos deben ser correctos, consistentes, completos, realistas, necesarios, verificables y rastreables.
+2.	¿Por qué es importante analizar correctamente los requisitos?
+Porque estos varían en función de lo que necesite el usuario final o cliente y determinan prácticamente todo el flujo de trabajo que se va a llevar a cabo para satisfacer dicha necesidad. Por lo tanto, la priorización de requisitos es una actividad clave para el éxito en la construcción del software y su objetivo es MAXIMIZAR el valor entregado al cliente. Se toman en cuenta indicadores como la complejidad, las dependencias, presupuesto, etc.
+Esto se hace por un analista que determina qué tiene prioridad con respecto a lo que pide el cliente y lo que se está creando.
+3.	¿Qué diferencia existe entre un requisito funcional y uno no funcional?
+Los requisitos pueden clasificarse como funcionales (Describen la funcionalidad del sistema) o no funcionales (Instrucciones que afectan al sistema.) 
+Los requisitos funcionales determinan las funciones que debe realizar un sistema, es decir, cómo funciona el mismo, qué puede hacer. Por ejemplo, son requisitos funcionales que un usuario pueda iniciar sesión en una aplicación, registrarse, realizar búsquedas, añadir productos al carrito, etc.
+Los requisitos no funcionales introducen el cómo debe funcionar el sistema atendiendo a ciertas características que se esperan del mismo, tales como la calidad, rendimiento y seguridad. Por ejemplo, un usuario puede esperar que una página cargue en menos de 3 segundos, que la contraseña se almacene de forma segura, que la aplicación funcione en varios navegadores, etc.
+________________________________________
+Ejercicio 2: Clasificación de requisitos
+Enunciado
+Clasifica los siguientes requisitos como Funcional, No Funcional o De Negocio.
+1.	El usuario podrá reservar habitaciones online.
+Funcional, ya que consiste en qué es capaz de realizar el programa o aplicación.
+2.	El sistema deberá estar disponible el 99,5 % del tiempo.
+No funcional, pues se espera que el sistema funcione de cierta manera que no tiene que ver con las operaciones internas del mismo.
+3.	Incrementar un 20 % las reservas realizadas por Internet.
+De negocio, ya que tiene unas perspectivas de beneficio económico a partir del sistema.
+4.	El cliente podrá cancelar una reserva.
+Funcional. Cancelar una reserva es una acción que tiene el sistema integrada.
+5.	La aplicación deberá responder en menos de 3 segundos.
+No funcional. Responde a una expectativa del usuario
+________________________________________
+Ejercicio 3: Diagrama de flujo
+Enunciado
+Una aplicación de biblioteca sigue el siguiente proceso:
+1.	El usuario introduce su número de socio.
+2.	El sistema verifica si es válido.
+3.	Si es válido, permite realizar préstamos.
+4.	Si no es válido, muestra un mensaje de error.
+Representa este proceso mediante un diagrama de flujo.
+________________________________________
+Ejercicio 4: Casos de uso
+Enunciado
+En una plataforma de cursos online existen las siguientes funciones:
+•	Consultar catálogo de cursos.
+•	Inscribirse en un curso.
+•	Descargar certificados.
+Identifica:
+1.	Los actores.
+El actor principal es el usuario que accede a la plataforma para realizar alguna acción.
+2.	Los casos de uso.
+Son una parte de un diagrama que describe un conjunto de secuencias de acciones que ejecuta el sistema para producir un resultado de valor para el usuario. Adquieren el valor de HERRAMIENTA para convertir REQUISITOS complejos en SOLUCIONES de software claras y funcionales. 
+En este caso son: consultar catálogos, inscribirse a cursos y descargar certificados.
+3.	Las relaciones entre ellos.
+La relación que mantienen es que el actor principal interactúa con las funciones del sistema.
+________________________________________
+Ejercicio 5: Documentación de requisitos
+Enunciado
+La empresa solicita lo siguiente:
+"Los clientes deben poder consultar el historial de compras desde la aplicación móvil."
+Redacta:
+•	Dos requisitos funcionales.
+•	Como deben ser las acciones que lleva a cabo el sistema, estos radican en tareas como la posibilidad de guardar el historial, de poder consultarlo, tener habilitada una zona de compra a la que se accede mediante el carrito, poder llevar a cabo dicha compra, cancelarla, poder tomar datos personales para la entrega, etc.
+•	Un requisito no funcional.
+La velocidad de carga de la página, privacidad de la misma, adaptación a móviles, etc.
+
+
+
+
+________________________________________
+Ejercicio 6: Validación de requisitos
+Enunciado
+Analiza los siguientes requisitos:
+1.	El sistema debe ser intuitivo.
+2.	El usuario podrá consultar sus pedidos.
+3.	La aplicación deberá ser rápida.
+Indica:
+•	Cuáles presentan problemas.
+1.“intuitivo" es subjetivo y no se puede medir fácilmente. Se puede mejorar determinando qué pasos llevan a cabo los clientes y a dónde le lleva cada uno. Debe poder hacerlo sin ayuda externa.
+2. No tiene problema.
+3. La respuesta es ambigua por no ser medible y además subjetiva atendiendo a qué entiende el usuario por “rápido”. Se mejora añadiendo un elemento cuantificable para medir el tiempo, como los segundos.
+
+•	Qué problema tienen.
+•	Cómo podrían mejorarse.
+
+________________________________________
+Ejercicio 7: Gestión de requisitos
+Enunciado
+Una tienda online solicita añadir un sistema de cupones de descuento cuando el desarrollo ya se encuentra avanzado.
+Responde:
+1.	¿Por qué debe gestionarse este cambio?
+Porque modifica el alcance inicial del proyecto y puede afectar a otros requisitos existentes.
+2.	¿Qué impacto podría tener?
+Incremento del esfuerzo.
+Retrasos en la planificación.
+Necesidad de nuevas pruebas.
+Cambios en la base de datos.
+Modificaciones en la interfaz.
+
+3.	¿Qué artefactos del proyecto podrían verse afectados?
+Porque modifica el alcance inicial del proyecto y puede afectar a otros requisitos existentes.
+Documento de requisitos.
+Casos de uso.
+Diagramas.
+Planificación.
+Casos de prueba.
+Matriz de trazabilidad.
+
+________________________________________
+Preguntas de reflexión
+1.	¿Qué problemas pueden aparecer si los requisitos están mal definidos?
+2.	¿Por qué es importante validar requisitos antes de comenzar a programar?
+3.	¿Cómo ayudan los diagramas de casos de uso a comprender un sistema?
+4.	¿Qué ventajas aporta mantener la trazabilidad de los requisitos?
+5.	¿Cómo puede afectar un cambio de requisitos a la planificación del proyecto?
+
+
+Pregunta 1
+Una mala definición de requisitos puede generar errores de desarrollo, sobrecostes y productos que no satisfagan al cliente.
+Pregunta 2
+Porque corregir errores en fases tempranas es mucho más barato que hacerlo cuando el sistema ya está desarrollado.
+Pregunta 3
+Porque muestran claramente qué funcionalidades utiliza cada actor.
+Pregunta 4
+Porque permite conocer el origen de cada requisito y analizar el impacto de los cambios.
+Pregunta 5
+Puede obligar a replantear tareas, plazos, recursos y presupuestos.
+

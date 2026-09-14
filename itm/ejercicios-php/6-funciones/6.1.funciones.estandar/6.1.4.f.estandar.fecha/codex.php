@@ -1,8 +1,8 @@
 <?php
 
 echo "Hola mundo, soy un archivo PHP apto para servidores y contengo funciones estandar para fechas:<br><br>";
-echo "<pre>
-
+echo "<div style='display: flex; gap: 30px;'>
+<pre>
 echo date('d/m/Y');           // Fecha completa<br>
 
 echo date('d');               // Día del mes<br>
@@ -27,8 +27,7 @@ echo date('D');               // Día abreviado<br>
 
 echo date('F');               // Mes completo<br>
 
-echo date('M');               // Mes abreviado<br><br>
-</pre>";
+echo date('M');               // Mes abreviado<br><br>";
 
 echo "Ejemplo:<br><br>";
 
@@ -95,5 +94,4 @@ echo"<br><br>";
 // Mes abreviado
 echo date("M");
 // Resultado: Sep
-
 ?>

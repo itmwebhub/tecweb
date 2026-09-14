@@ -1,97 +1,101 @@
 <?php
 
 echo "Hola mundo, soy un archivo PHP apto para servidores y contengo funciones estandar para fechas:<br><br>";
-echo "<div style='display: flex; gap: 30px;'>
-<pre>
-echo date('d/m/Y');           // Fecha completa<br>
+echo "<div style='display: flex; gap: 30px; align-items: flex-start;'>";
 
-echo date('d');               // Día del mes<br>
+echo "<div>";
+// TU TABLA <get>
+echo "</div>";
 
-echo date('l');               // Día de la semana<br>
+echo "<div>";
 
-echo date('m');               // Mes<br>
+echo "<table border='1' cellpadding='8' cellspacing='0'>";
+echo "<table border='1' cellpadding='10' cellspacing='0'>";
 
-echo date('Y');               // Año<br>
+echo "<tr>";
+echo "<th>Descripción</th>";
+echo "<th>Código PHP</th>";
+echo "<th>Resultado</th>";
+echo "</tr>";
 
-echo date('H');               // Hora<br>
+echo "<tr>";
+echo "<td>Fecha completa</td>";
+echo "<td>date(\"d/m/Y\")</td>";
+echo "<td>" . date("d/m/Y") . "</td>";
+echo "</tr>";
 
-echo date('i');               // Minutos<br>
+echo "<tr>";
+echo "<td>Día del mes</td>";
+echo "<td>date(\"d\")</td>";
+echo "<td>" . date("d") . "</td>";
+echo "</tr>";
 
-echo date('s');               // Segundos<br>
+echo "<tr>";
+echo "<td>Día de la semana</td>";
+echo "<td>date(\"l\")</td>";
+echo "<td>" . date("l") . "</td>";
+echo "</tr>";
 
-echo date('H:i:s');           // Hora completa<br>
+echo "<tr>";
+echo "<td>Mes</td>";
+echo "<td>date(\"m\")</td>";
+echo "<td>" . date("m") . "</td>";
+echo "</tr>";
 
-echo date('d/m/Y H:i:s');     // Fecha y hora<br>
+echo "<tr>";
+echo "<td>Año</td>";
+echo "<td>date(\"Y\")</td>";
+echo "<td>" . date("Y") . "</td>";
+echo "</tr>";
 
-echo date('D');               // Día abreviado<br>
+echo "<tr>";
+echo "<td>Hora</td>";
+echo "<td>date(\"H\")</td>";
+echo "<td>" . date("H") . "</td>";
+echo "</tr>";
 
-echo date('F');               // Mes completo<br>
+echo "<tr>";
+echo "<td>Minutos</td>";
+echo "<td>date(\"i\")</td>";
+echo "<td>" . date("i") . "</td>";
+echo "</tr>";
 
-echo date('M');               // Mes abreviado<br><br>";
+echo "<tr>";
+echo "<td>Segundos</td>";
+echo "<td>date(\"s\")</td>";
+echo "<td>" . date("s") . "</td>";
+echo "</tr>";
 
-echo "Ejemplo:<br><br>";
+echo "<tr>";
+echo "<td>Hora completa</td>";
+echo "<td>date(\"H:i:s\")</td>";
+echo "<td>" . date("H:i:s") . "</td>";
+echo "</tr>";
 
-// Fecha completa
-echo date("d/m/Y");
-// Resultado: 14/09/2026
-echo"<br><br>";
+echo "<tr>";
+echo "<td>Fecha y hora</td>";
+echo "<td>date(\"d/m/Y H:i:s\")</td>";
+echo "<td>" . date("d/m/Y H:i:s") . "</td>";
+echo "</tr>";
 
-// Día del mes
-echo date("d");
-// Resultado: 14
+echo "<tr>";
+echo "<td>Día abreviado</td>";
+echo "<td>date(\"D\")</td>";
+echo "<td>" . date("D") . "</td>";
+echo "</tr>";
 
-echo"<br><br>";
-// Día de la semana
-echo date("l");
-// Resultado: Monday
+echo "<tr>";
+echo "<td>Mes completo</td>";
+echo "<td>date(\"F\")</td>";
+echo "<td>" . date("F") . "</td>";
+echo "</tr>";
 
-echo"<br><br>";
-// Mes
-echo date("m");
-// Resultado: 09
-echo"<br><br>";
+echo "<tr>";
+echo "<td>Mes abreviado</td>";
+echo "<td>date(\"M\")</td>";
+echo "<td>" . date("M") . "</td>";
+echo "</tr>";
 
-// Año
-echo date("Y");
-// Resultado: 2026
-echo"<br><br>";
+echo "</table>";
 
-// Hora
-echo date("H");
-// Resultado: 08
-
-echo"<br><br>";
-// Minutos
-echo date("i");
-// Resultado: 32
-
-echo"<br><br>";
-// Segundos
-echo date("s");
-// Resultado: 45
-echo"<br><br>";
-
-// Hora completa
-echo date("H:i:s");
-// Resultado: 08:32:45
-
-echo"<br><br>";
-// Fecha y hora
-echo date("d/m/Y H:i:s");
-// Resultado: 14/09/2026 08:32:45
-
-echo"<br><br>";
-// Día de la semana abreviado
-echo date("D");
-// Resultado: Mon
-
-echo"<br><br>";
-// Mes escrito
-echo date("F");
-// Resultado: September
-
-echo"<br><br>";
-// Mes abreviado
-echo date("M");
-// Resultado: Sep
 ?>

@@ -24,7 +24,6 @@ Un requisito describe una funcionalidad, restricción o necesidad que el softwar
 |------------------|-------------|----------|
 | Funcional | Describe lo que el sistema debe hacer. | El usuario podrá registrarse. |
 | No funcional | Describe restricciones o atributos de calidad. | La aplicación responderá en menos de 2 segundos. |
-| De negocio | Describe objetivos de la organización. | Incrementar las ventas online un 15%. |
 
 ### Modelos para el análisis de requisitos
 

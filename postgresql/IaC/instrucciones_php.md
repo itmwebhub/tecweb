@@ -14,4 +14,22 @@ Fichero source.sh
 chmod +x /workspaces/tecweb/php/entorno.sh
 source /workspaces/tecweb/php/entorno.sh
 ```
+Configurar php para que obtenga pg_connect:
+
+```bash
+sudo apt update
+sudo apt install php8.3-cli php8.3-pgsql
+
+/usr/bin/php -r "var_dump(function_exists('pg_connect'));"
+
+export PATH="/usr/bin:$PATH"
+hash -r
+php -r "var_dump(function_exists('pg_connect'));"
+
+```
+
+
+
+
+
 

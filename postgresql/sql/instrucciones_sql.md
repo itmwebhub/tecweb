@@ -76,13 +76,23 @@ ORDER BY apellido_1, apellido_2, nombre;
 ```
 ## Crear un usuario con solo derecho de lectura en una tabla de una base de datos
 ```sql
-CREATE USER php_prueba
-WITH PASSWORD 'TuPasswordSegura';
+-- Crear el usuario
+CREATE USER php_prueba WITH PASSWORD 'TuPasswordSegura';
 
+-- Permitir que se conecte a la base de datos
 GRANT CONNECT ON DATABASE phptecweb TO php_prueba;
 
+-- Permitir el uso del esquema
 GRANT USAGE ON SCHEMA public TO php_prueba;
+
+-- Dar permisos solo sobre una tabla
+GRANT SELECT ON TABLE persona TO php_prueba;
+
+GRANT INSERT ON TABLE persona TO php_prueba;
+
+GRANT UPDATE ON TABLE persona TO php_prueba;
 ```
+
 ## Verificar los permisos
 ```sql
 SELECT grantee, privilege_type

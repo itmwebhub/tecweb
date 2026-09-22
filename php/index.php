@@ -7,40 +7,12 @@
 </head>
 <body>
 
-    <h1>Mi primera página PHP</h1>
-
-    <p>
-        <?php
-            // Conecta a una base de datos
-            $conexion = pg_connect(
-                "host=" . getenv("DB_HOST") .
-                " port=" . getenv("DB_PORT") .
-                " dbname=" . getenv("DB_NAME") .
-                " user=" . getenv("DB_USER") .
-                " password=" . getenv("DB_PASSWORD") .
-                " sslmode=require"
-            );
-
-            if (!$conexion) {
-                die("<br>Error al conectar con la base de datos.");
-            }
-            echo "<br>Conexión establecida correctamente.";
-            // Mostrar todos los registros de la tabla persona
-            $resultado = pg_query($conexion, "SELECT dni, nombre, apellido_1, apellido_2, fecha_nacimiento FROM persona");
-            if (!$resultado) {
-                die("<br>Error al ejecutar la consulta: " . htmlspecialchars(pg_last_error($conexion)));
-            }
-            while ($fila = pg_fetch_assoc($resultado)) {
-                echo "<br>DNI: " . htmlspecialchars($fila['dni']) .
-                    ", Nombre: " . htmlspecialchars($fila['nombre'] ?? '') .
-                    ", Apellidos: " . htmlspecialchars(trim(($fila['apellido_1'] ?? '') . " " . ($fila['apellido_2'] ?? ''))) .
-                    ", Fecha de nacimiento: " . htmlspecialchars($fila['fecha_nacimiento'] ?? '');
-            }
-            
-        ?>
-
-
-    </p>
+    <h1>Operaciones con la base de datos</h1>
+    <a href="formularios/ver_todos.php">Ver todos</a>
+    <br>
+    <a href="formularios/seleccionar_dni.php">Seleccionar por DNI</a>
+    <br>
+    
 
 </body>
 </html>

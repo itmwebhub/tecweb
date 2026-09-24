@@ -9,6 +9,10 @@ $conexion = pg_connect(
     " sslmode=require"
 );
 
+if (!$conexion) {
+    die("ERROR DE CONEXIÓN: " . pg_last_error());
+}
+
 $dni = $_POST['dni'];
 $nombre = $_POST['nombre'];
 $apellido_1 = $_POST['apellido_1'];
@@ -17,7 +21,7 @@ $fecha_nacimiento = $_POST['fecha_nacimiento'];
 
 $resultado = pg_query_params(
     $conexion,
-    "UPDATE dni
+    "UPDATE public.persona
      SET nombre = $1,
          apellido_1 = $2,
          apellido_2 = $3,
@@ -32,11 +36,11 @@ $resultado = pg_query_params(
     ]
 );
 
-if ($resultado) {
-    echo "<h2>Datos actualizados correctamente</h2>";
-    echo "<p>El individuo con DNI " . htmlspecialchars($dni) . " ha sido actualizado.</p>";
-} else {
-    echo "<h2>Error al actualizar los datos</h2>";
+if (!$resultado) {
+    die("ERROR AL ACTUALIZAR: " . pg_last_error($conexion));
 }
+
+echo "<h2>Datos actualizados correctamente</h2>";
+echo "<p>El individuo con DNI " . htmlspecialchars($dni) . " ha sido actualizado.</p>";
 
 ?>

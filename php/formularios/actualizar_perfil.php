@@ -18,7 +18,7 @@
             type="text"
             id="dni"
             name="dni"
-            maxlength="10"
+            maxlength="9"
             required
         >
 

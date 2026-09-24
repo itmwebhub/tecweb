@@ -9,15 +9,23 @@ $conexion = pg_connect(
     " sslmode=require"
 );
 
+if (!$conexion) {
+    die("ERROR DE CONEXIÓN: " . pg_last_error());
+}
+
 $dni = $_POST['dni'];
 
 $resultado = pg_query_params(
     $conexion,
     "SELECT dni, nombre, apellido_1, apellido_2, fecha_nacimiento
-     FROM dni
+     FROM public.persona
      WHERE dni = $1",
     [$dni]
 );
+
+if (!$resultado) {
+    die("ERROR EN LA CONSULTA: " . pg_last_error($conexion));
+}
 
 $fila = pg_fetch_assoc($resultado);
 
@@ -104,4 +112,3 @@ if (!$fila) {
 </body>
 
 </html>
-

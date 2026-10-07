@@ -41,7 +41,7 @@ Como se ha indicado,se almacenará en $resultado.
 PASO 4
 Ahora es necesario tener una estructura visible en HTML para todos estos datos que se han almacenado y según las especificaciones de la búsqueda. Por lo tanto, hemos de hacer un paréntesis en php y, en el mismo documento php, introducir un un HTML para ordenar los datos en una tabla de forma visible:
 
-<!DOCTYPE html>
+```<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -56,7 +56,7 @@ Ahora es necesario tener una estructura visible en HTML para todos estos datos q
             <th>ID</th>
             <th>Nombre</th>
             <th>Email</th>
-        </tr>
+        </tr>```
 
 "Border" indica el grosor del borde de la tabla, <tr> hace una FILA y <th> los datos de esa fila, pues es un ENCABEZADO.
 

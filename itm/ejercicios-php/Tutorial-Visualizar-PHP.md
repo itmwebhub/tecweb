@@ -1,13 +1,13 @@
 Tutorial para VISUALIZACIÓN de tablas en una BASE DE DATOS POSTGRES:
 
 PASO 1:
-Lo primero que hay que hacer es determinar un documento HTML para que el usuario pueda interactuar con la base de datos desde su sistema y la información se le muestre en forma de tablas. Para ello determinaremos un estándar con <head> y <body>. A continuación, lo primero que queremos es que nos salga la tabla con la información en HTML desde la base de datos. Esto YA ES una acción o petición para la base de datos, por lo cual debe introducirse a través de un formulario que se relacione con el archivo php que accede a la base de datos y un método POST para enviar el requerimiento del usuario. Como no pedimos nada más que los datos generales, no necesitamos indagar en concreciones:
+Lo primero que hay que hacer es determinar un documento HTML para que el usuario pueda interactuar con la base de datos desde su sistema y la información se le muestre en forma de tablas. Para ello determinaremos un estándar con ```<head>``` y ```<body>```. A continuación, lo primero que queremos es que nos salga la tabla con la información en HTML desde la base de datos. Esto YA ES una acción o petición para la base de datos, por lo cual debe introducirse a través de un formulario que se relacione con el archivo php que accede a la base de datos y un método POST para enviar el requerimiento del usuario. Como no pedimos nada más que los datos generales, no necesitamos indagar en concreciones:
 
-<label>Mostrar usuarios</label>
+```<label>Mostrar usuarios</label>
 
 <form action="usuarios.php" method="POST">
     <button type="submit">Mostrar</button>
-</form>
+</form>```
 
 PASO 2 
 Este formulario se relaciona DIRECTAMENTE con un documento php (usuarios.php) que lleva a cabo la conexión con el servidor y la traducción de los datos de este para HTML. Su estructura es la siguiente:
